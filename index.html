@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <nav id="header">
+        <div id="leftHeader">
+            <div><img src="assets/images/karatescore-122x67.png" alt="Karate
+                        Score"></div>
+            <p>KARATESCORE</p>
+        </div>
+        <div id="rightHeader">
+            <div id="home">Home</div>
+            <div id="timer">Timer</div>
+            <div id="register">Registration</div>
+            <div id="competitors">Competitors</div>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="homePage">
+            <br><br>
+            <h1>WELCOME TO KARATESCORE</h1>
+            <h2> We aim to make the local karate competition experience
+                smoother by creating a website in which tournament
+                registration and management are possible.</h2>
+        </div>
+
+        <div id="timerPage">
+            <div class="scoring">
+                <div id="redbox"> 0 </div>
+                <div id = "redsenshuu"> SENSHUU </div>
+                <br> <br>
+                <div id="redpenalties">
+                    <button class="btn w" id="redcat1w">W</button>
+                    <button class="btn k" id="redcat1k">K</button>
+                    <button class="btn hc" id="redcat1hc">HC</button>
+                    <button class="btn h" id="redcat1h">H</button>
+                    <br>
+                    <button class="btn w" id="redcat2w">W</button>
+                    <button class="btn k" id="redcat2k">K</button>
+                    <button class="btn hc" id="redcat2hc">HC</button>
+                    <button class="btn h" id="redcat2h">H</button>
+                </div>
+                <br> <br>
+                <select name="+points" id="red+points">
+                    <option value=0 selected disabled hidden style='display: none'>+ points</option>
+                    <option value=3>+3</option>
+                    <option value=2>+2</option>
+                    <option value=1>+1</option>
+                </select>
+
+                <select name="-points" id="red-points">
+                    <option value = 0 selected disabled hidden style='display: none'>- points</option>
+                    <option value=-3>-3</option>
+                    <option value=-2>-2</option>
+                    <option value=-1>-1</option>
+                </select>
+                <input type="submit" value="Change Points" id = "redchangepoints">
+            </div>
+
+            <div id="timeInfo">
+                <div id="time">2:00.000</div>
+                <div id="controls">
+                    <button id = "start" class="btn">Start</button>
+                    <button id = "stop" class="btn">Stop</button>
+                    <button id = "reset" class="btn">Reset</button>
+                </div>
+            </div>
+
+            <div class="scoring">
+                <div id="bluebox"> 0 </div>
+                <div id = "bluesenshuu"> 
+                    SENSHUU
+                </div>
+                <br> <br>
+                <div id=bluepenalties>
+                    <button class="btn w" id="bluecat1w">W</button>
+                    <button class="btn k" id="bluecat1k">K</button>
+                    <button class="btn hc" id="bluecat1hc">HC</button>
+                    <button class="btn h" id="bluecat1h">H</button>
+                    <br>
+                    <button class="btn w" id="bluecat2w">W</button>
+                    <button class="btn k" id="bluecat2k">K</button>
+                    <button class="btn hc" id="bluecat2hc">HC</button>
+                    <button class="btn h" id="bluecat2h">H</button>
+                </div>
+                <br> <br>
+                <div>
+                    <select name="+points" id="blue+points">
+                        <option value = 0 selected disabled hidden style='display: none'>+ points</option>
+                        <option value=3>+3</option>
+                        <option value=2>+2</option>
+                        <option value=1>+1</option>
+                    </select>
+
+                    <select name="-points" id="blue-points">
+                        <option value = 0 selected disabled hidden style='display: none'>- points</option>
+                        <option value=-3>-3</option>
+                        <option value=-2>-2</option>
+                        <option value=-1>-1</option>
+                    </select>
+                    <input type="submit" value="Change Points" id = "bluechangepoints">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="registerPage">
+        <br>
+        <br>
+        <div id="content">
+            <h1>Registration Form</h1>
+            <hr>
+            <p>
+                Please note that all fields are required.
+            </p>
+            <form action = "#" onsubmit="javascript:submitForm()" method="post">
+                <h2>Family Contact Info</h2>
+                <hr><hr><br>
+                Contact Name <input type="text" required="" id="cont-name"><br><br>
+                Email <input type="email" required="" id="email"><br><br>
+                Phone <input type="tel" required="" id="phone"><br><br>
+                <br>
+                <h2>Competitor Registration</h2>
+                <hr>
+                <hr>
+                <br>
+                First Name <input type="text" required="" id="compfirstname">
+                Last Name <input type="text" required="" id="complastname"><br><br>
+                Experience <select required name="exp" id="exp">
+                    <option selected disabled hidden style='display: none' value=''> </option>
+                    <option value="beginner">Beginner</option>
+                    <option value="novice">Novice</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                Age <input type="number" required="" id="age">
+                <br>
+                <br>
+                Gender <select required name="gender" id="gender">
+                    <option selected disabled hidden style='display: none' value=''> </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Submit Form" id = "regsubmit">
+            </form>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div id="resultsPage">
+        <div class = "table">
+            <h1> Registered Competitors </h1>
+            Name <input type="text" required="" id="compnamefilter">
+            Experience <select required name="exp" id="expfilter">
+                <option selected disabled hidden style='display: none' value=''> </option>
+                <option value="beginner">Beginner</option>
+                <option value="novice">Novice</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            Age Min <input type="number" required="" id="ageminfilter">
+            Age Max <input type="number" required="" id="agemaxfilter">
+            Gender <select required name="gender" id="genderfilter">
+                <option selected disabled hidden style='display: none' value=''> </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="submit" value="Search" id = "filterresults">
+            <br> <br>
+            <table style="width:100%" id = "allcompetitors">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th> 
+                    <th>Gender</th>
+                    <th>ID</th>
+                    <th>Experience</th> 
+                </tr>
+            </table>
+            <br> <br>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

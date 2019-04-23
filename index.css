@@ -1,0 +1,134 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    align-content: center;
+    min-height: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 10pt;
+    background-color: #333333;
+    color: white;
+}
+p, #rightHeader> div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#leftHeader{
+    display: flex;
+    justify-content: space-between;
+}
+#rightHeader{
+    display: flex;
+    justify-content: space-around;
+}
+#homePage{
+    background-image:  url("850_2064.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+}
+#rightHeader> div, #leftHeader> div {
+    padding: 10pt;
+}
+h1, h2{
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 3pt;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+
+}
+#controls{
+    display: flex;
+    justify-content: space-around;
+}
+#timerPage{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin: 10pt;
+    margin-left: 12%;
+}
+#timerPage{
+    font-size: 70pt;
+}
+#redbox, #bluebox{
+    margin-left: 50px;
+    display: inline-block;
+    padding: 40px;
+    color: white;
+}
+#redbox {
+    background-color: #f00;
+    font-size: 50pt;
+}
+
+#bluebox {
+    background-color: #00f;
+    font-size: 50pt;
+}
+
+#time {
+    display: inline-block;
+}
+.controls > div, .scoring > div >div {
+    margin: 10pt;
+    padding: 10pt;
+}
+
+.penalties > div{
+    display: flex;
+}
+.scoring, #time{
+    margin: 20pt;
+}
+
+.scoring, #bluesenshuu, #redsenshuu {
+    font-size: 12px;
+    text-align: center;
+  }
+
+#content{
+    width:820px;/*change the value to suite ur need*/
+    margin:0 auto;/*this will center ur content*/
+}
+
+invisible {
+    color: white;
+  }
+
+
+
+th, td, p, input {
+    font:14px Verdana;
+}
+table, th, td 
+{
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+th {
+    font-weight:bold;
+}
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 5px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+  }
+.btn:hover {background: #eee;}
